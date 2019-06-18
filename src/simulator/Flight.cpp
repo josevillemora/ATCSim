@@ -50,6 +50,9 @@ Flight::Flight(std::string _id, Position _pos, float _bearing, float _inclinatio
 	pos = _pos;
 	bearing = _bearing;
 	init_bearing = _bearing;
+	init_z=_pos.get_z();
+	init_y=_pos.get_y();
+	init_x=pos.get_x();
 	inclination = _inclination;
 	//speed = _speed;
 	setSpeed(_speed);	// Through set in order to limit speeds
